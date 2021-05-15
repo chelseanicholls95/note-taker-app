@@ -1,4 +1,4 @@
-const read = require("../../db/read");
+const { read } = require("../../db/database");
 
 const getAllNotes = (req, res) => {
   const data = JSON.parse(read());
