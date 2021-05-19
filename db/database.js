@@ -15,7 +15,7 @@ const write = (data) => {
     }
   };
   const filePath = path.join(__dirname, "./db.json");
-  fs.writeFile(filePath, data, callback);
+  fs.writeFile(filePath, JSON.stringify(data), callback);
 };
 
 module.exports = { read, write };
