@@ -9,9 +9,9 @@ const read = () => {
 const write = (data) => {
   const callback = (error) => {
     if (error) {
-      console.log(error);
+      console.info(error);
     } else {
-      console.log("Successfully added to file!");
+      console.info("Successfully added to file!");
     }
   };
   const filePath = path.join(__dirname, "./db.json");
