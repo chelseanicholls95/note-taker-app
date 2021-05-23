@@ -2,6 +2,8 @@
 
 ## Description
 
+A node project which involved creating the server-side modules for a note-taker app. Using Express.js to add, retrieve and delete information from a database to enable the user to save and view the notes that they have saved. The NPM package, UUID was used to generate unique ID's for each note that is saved to the database.
+
 ## Table of Contents
 
 [Description](#description)  
@@ -19,6 +21,7 @@
 - JavaScript
 - Node.js
 - Express.js
+- UUID NPM package
 
 ## Getting Started
 
@@ -30,6 +33,8 @@ npm install
 ```
 
 ## Link to Deployed Application
+
+Click [here](https://quiet-thicket-51765.herokuapp.com/) to view the app.
 
 ## License
 
