@@ -1,10 +1,11 @@
-const uuid = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
 const { read, write } = require("../../db/database");
 
 const saveNewNote = (req, res) => {
-  const newNote = { ...req.body, id: uuid.v4() };
-  const data = JSON.parse(read());
+  const { title, text } = req.body;
+  const newNote = { title, text, id: uuidv4() };
+  const data = read();
   data.push(newNote);
   write(data);
   res.json(data);
