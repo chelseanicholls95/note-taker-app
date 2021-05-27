@@ -1,11 +1,9 @@
 const { read, write } = require("../../db/database");
 
 const deleteNote = (req, res) => {
-  const data = JSON.parse(read());
-  const id = req.params.id;
-  const newData = data.filter((each) => {
-    return each.id !== id;
-  });
+  const data = read();
+  const { id } = req.params;
+  const newData = data.filter((each) => each.id !== id);
   write(newData);
   res.json(newData);
 };
