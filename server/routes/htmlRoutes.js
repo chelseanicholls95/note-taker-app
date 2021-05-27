@@ -4,7 +4,7 @@ const { renderHome, renderNotes } = require("../controllers/renderHTML");
 
 const router = express.Router();
 
-router.get("/", renderHome);
 router.get("/notes", renderNotes);
+router.get("/*", renderHome);
 
 module.exports = router;
