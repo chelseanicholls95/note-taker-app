@@ -29,6 +29,18 @@ A node project which involved creating the server-side modules for a note-taker 
 git clone git@github.com:chelseanicholls95/note-taker-app.git
 cd note-taker-app
 code .
+```
+
+### Run Application
+
+```
+npm run start
+```
+
+### Run Locally
+
+```
+npm run dev
 npm install
 ```
 

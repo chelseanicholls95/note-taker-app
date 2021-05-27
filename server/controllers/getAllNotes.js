@@ -1,14 +1,8 @@
 const { read } = require("../../db/database");
 
 const getAllNotes = (req, res) => {
-  const data = JSON.parse(read());
-  const notes = data.map(({ title, text, id }) => ({
-    title,
-    text,
-    id,
-  }));
-
-  res.json(notes);
+  const data = read();
+  res.json(data);
 };
 
 module.exports = getAllNotes;
